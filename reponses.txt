@@ -1,0 +1,19 @@
+6-a)la commande git fetch récupère les dernières modifications à partir du dépôt distant et les stocke dans votre dépôt local, mais ne les fusionne pas avec votre code existant tandis que la commande git pull récupère également les dernières modifications à partir du dépôt distant, mais effectue une fusion automatique de ces modifications avec votre code existant.
+ b-Exécutez la commande git status pour voir les modifications non validées dans votre dépôt local.
+
+Identifiez les fichiers que vous souhaitez annuler et exécutez la commande git checkout -- nom_de_fichier pour annuler les modifications non validées sur ce fichier.
+ c-Pour supprimer une branche distante dans Git, vous pouvez utiliser la commande git push avec l'option --delete suivie du nom de la branche distante que vous souhaitez supprimer. Voici les étapes à suivre :
+
+Exécutez la commande git branch -r pour afficher la liste des branches distantes.
+
+Identifiez le nom de la branche distante que vous souhaitez supprimer.
+
+Exécutez la commande git push origin --delete nom_de_la_branche_distante pour supprimer la branche distante.
+Si vous souhaitez supprimer la branche distante appelée ma-branche sur le dépôt distant appelé origin, exécutez la commande suivante :
+git push origin --delete ma-branche
+ d-Pour voir l'historique des modifications pour un fichier spécifique dans Git, vous pouvez utiliser la commande git log avec l'option --follow suivie du nom du fichier que vous souhaitez consulter. Voici les étapes à suivre :
+
+Ouvrez un terminal ou une console et accédez au répertoire de travail de votre dépôt Git local.
+Exécutez la commande git log --follow nom_de_fichier en remplaçant nom_de_fichier par le nom du fichier que vous souhaitez consulter.
+si vous on voir l'historique des modifications pour le fichier mon_fichier.txt, exécutez la commande suivante :
+git log --follow mon_fichier.txt
